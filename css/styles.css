@@ -35,21 +35,30 @@ body {
     border: none;
     text-align: center;
     font-size: 18px;
+    box-sizing: border-box;
+    margin: 10px;
 }
 
 .nav__button {
     background-color: var(--background-color);
 }
 
+.nav__button--black {
+    background-color: black;
+    color: white;
+}
+
 @media only screen and (max-width: 360px) {
     .nav__hamburger {display: block;}
     .nav__button {display: none;}
+    .nav__button--black {display: none;}
 }
 
 @media only screen and (min-width: 361px) {
     .nav {width: 100%;}
     .nav__hamburger {display: none;} 
     .nav__button {display: block;}
+    .nav__button--black {display: block;}
 }
 
 @media only screen and (min-width: 361px) and (max-width: 1024px) {
