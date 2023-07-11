@@ -18,19 +18,20 @@ body {
 
 .nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     width: 332px;
     height: 52px;
     padding: 14px;
 }
 
-.nav__container--left {
+.nav__main {
+    display: flex;
     justify-content: flex-start;
 }
 
-.nav__container--right {
+.nav__auth {
+    display: flex;
     justify-content: flex-end;
-
 }
 
 .nav__logo, .nav__hamburger {
@@ -39,6 +40,19 @@ body {
 
 .nav__hamburger {
     display: none;
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__li {
+    list-style: none;
+    font-family: "Neue Machina", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 20px;
 }
 
 .button {
@@ -62,6 +76,7 @@ body {
 
 @media screen and (max-width: 360px) {
     .nav__hamburger {display: block;}
+    .nav__ul {display: none;}
     .nav__button {display: none;}
     .nav__button--black {display: none;}
 }
@@ -69,6 +84,7 @@ body {
 @media screen and (min-width: 1024px) {
     .nav {width: 960px;}
     .nav__hamburger {display: none;} 
+    .nav__ul {display: block;}
     .nav__button {display: block;}
     .nav__button--black {display: block;}
 }
