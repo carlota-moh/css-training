@@ -1,5 +1,15 @@
+@font-face {
+    font-family: "Neue Machina";
+    src: url('../fonts/neue_machina/NeueMachina-Regular.otf');
+    src: url('../fonts/neue_machina/NeueMachina-Regular.otf') format('opentype');
+}
+
 :root {
     --background-color: #F0F0F0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +22,6 @@ body {
     width: 332px;
     height: 52px;
     padding: 14px;
-    box-sizing: border-box;
 }
 
 .nav__container--left {
@@ -28,6 +37,10 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.nav__hamburger {
+    display: none;
+}
+
 .button {
     width: 145px;
     height: 52px;
@@ -35,7 +48,6 @@ body {
     border: none;
     text-align: center;
     font-size: 18px;
-    box-sizing: border-box;
     margin: 10px;
 }
 
@@ -48,25 +60,23 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .nav__hamburger {display: block;}
     .nav__button {display: none;}
     .nav__button--black {display: none;}
 }
 
-@media only screen and (min-width: 361px) {
-    .nav {width: 100%;}
+@media screen and (min-width: 1024px) {
+    .nav {width: 960px;}
     .nav__hamburger {display: none;} 
     .nav__button {display: block;}
     .nav__button--black {display: block;}
 }
 
-@media only screen and (min-width: 361px) and (max-width: 1024px) {
+@media screen and (min-width: 1440px) {
+    .nav {width: 1280px;}
 }
 
-@font-face {
-    font-family: "Neue Machina";
-    src: url('../fonts/neue_machina/NeueMachina-Regular.otf');
-    src: url('../fonts/neue_machina/NeueMachina-Regular.otf') format('opentype');
+@media screen and (min-width: 2560px) {
+    .nav {width: 2280px;}
 }
-
