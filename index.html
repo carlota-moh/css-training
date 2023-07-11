@@ -13,34 +13,30 @@
 <body>
     <header>
         <nav class="nav">
-            <span class="nav nav__container--left">
+            <div class="nav__main">
                 <span class="nav__logo">
                     <img src="imgs/LogoBlack.png" alt="Logo icon">
                 </span>
-                <span>
-                    <button class="button nav__button" id="about-us">About us</button>
-                </span>
-                <span>
-                    <button class="button nav__button" id="how-it-works">How it works</button>
-                </span>
-                <span>
-                    <button class="button nav__button" id="pricing">Pricing</button>
-                </span> 
-                <span>
-                    <button class="button nav__button" id="faqs">FAQs</button>
-                </span> 
-            </span>
-            <span class="nav nav__container--right">
+    
+                <ul class="nav__ul">
+                    <li class="nav__li" id="about-us">About us</li>
+                    <li class="nav__li" id="how-it-works">How it works</li>
+                    <li class="nav__li" id="pricing">Pricing</li>
+                    <li class="nav__li" id="faqs">FAQs</li>
+                </ul>
+            </div>
+
+            <div class="nav__auth">
                 <span class="nav__hamburger">
                     <img src="imgs/hamburguer.png" alt="Hamburguer icon">
-                </span> 
+                </span>
                 <span>
                     <button class="button nav__button" id="login">Login</button>
                 </span>
                 <span>
                     <button class="button nav__button--black" id="sign-up">Sign up</button>
-                </span>
-            </span>            
+                </span> 
+            </div> 
         </nav>
     </header>
     
