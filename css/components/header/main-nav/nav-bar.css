@@ -4,6 +4,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     max-width: 332px;
     height: 52px;
@@ -14,6 +15,7 @@
     .nav {
         max-width: 960px;
         margin: 36px 32px;
+        margin-right: 32px;
     }   
 }
 
@@ -21,6 +23,7 @@
     .nav {
         max-width: 1280px;
         margin: 36px 80px;
+        margin-right: 80px;
     }   
 }
 
@@ -28,5 +31,6 @@
     .nav {
         max-width: 2280px;
         margin: 36px 1400px;
+        margin-right: 1400px;
     }   
 }

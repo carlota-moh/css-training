@@ -7,7 +7,7 @@ a {
 
 .nav__in-site {
   display: flex;
-  max-width: 50%;
+  flex-wrap: wrap;
 }
 
 .nav__logo {
