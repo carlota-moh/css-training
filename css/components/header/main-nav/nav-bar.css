@@ -1,0 +1,23 @@
+/* common nav configuration */
+
+.nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 332px;
+    height: 52px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 360px){
+    .nav {max-width: 960px;}   
+}
+
+@media screen and (min-width: 1024px){
+    .nav {max-width: 1280px;}   
+}
+
+@media screen and (min-width: 1440px){
+    .nav {max-width: 2280px;}   
+}

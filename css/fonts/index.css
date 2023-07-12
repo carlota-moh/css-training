@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Neue Machina";
+    src: url('../fonts/neue_machina/NeueMachina-Regular.otf');
+    src: url('../fonts/neue_machina/NeueMachina-Regular.otf') format('opentype');
+}

@@ -1,0 +1,11 @@
+/* common button configuration */
+
+.button {
+    width: 145px;
+    height: 52px;
+    font-family: "Neue Machina", Arial, Helvetica, sans-serif;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
