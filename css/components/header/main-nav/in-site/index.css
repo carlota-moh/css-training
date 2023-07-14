@@ -3,6 +3,12 @@
 a {
   color: black;
   text-decoration: none;
+  padding: 3px;
+}
+
+a:focus {
+  outline: 3px solid black;
+  border-radius: 2rem;
 }
 
 .nav__in-site {
