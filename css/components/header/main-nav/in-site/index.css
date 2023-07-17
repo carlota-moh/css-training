@@ -1,5 +1,9 @@
 /* logo + list of links */
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -37,8 +41,14 @@ a:focus {
     flex-direction: column;
     padding: min(30vh, 10rem) 1em;
     background: hsl(0, 0%, 0%, 0.1);
-    backdrop-filter: blur(1rem); 
+    backdrop-filter: blur(1rem);
+    transition: transform 400ms ease-out;
+    transform: translateX(100%);
   }
+}
+
+.nav__link-list[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 @media screen and (min-width: 360px) {
