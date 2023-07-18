@@ -29,12 +29,13 @@
 }
 
 .nav__button__log-in {
-  background-color: #f0f0f0;
+  background-color: var(--background-color, white);
+  color: var(--font-color)
 }
 
 .nav__button__sign-up {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-background-color);
+  color: var(--complementary-font-color);
 }
 
 @media screen and (min-width: 360px) {
