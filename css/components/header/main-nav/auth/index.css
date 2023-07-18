@@ -18,6 +18,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.nav__menu-toggle:focus {
+  transform: scale(1.1);
+  background-color: var(--background-color, white);
+  color: var(--font-color);
+  outline: var(--outline);
+}
+
 .nav__menu-toggle[aria-expanded="true"] {
   background-image: url("assets/closed-menu.png");
   background-color: transparent;
@@ -30,7 +37,7 @@
 
 .nav__button__log-in {
   background-color: var(--background-color, white);
-  color: var(--font-color)
+  color: var(--font-color);
 }
 
 .nav__button__sign-up {
