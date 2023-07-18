@@ -1,5 +1,5 @@
-const navSlideWindow = document.querySelector(".nav__link-list");
-const navToggleButton = document.querySelector(".nav__menu-toggle");
+const navSlideWindow = document.querySelector(".js-list");
+const navToggleButton = document.querySelector("button[aria-controls=js-list]");
 
 navToggleButton.addEventListener("click", () => {
   const isVisible = navSlideWindow.getAttribute("data-visible");
