@@ -1,9 +1,38 @@
-:root {
-    --background-color: #f0f0f0;
-    --dark-background-color: black;
-    --font-fam: "Neue Machina", Arial, Helvetica, sans-serif;
-    --font-size: 18px;
-    --font-color: black;
-    --complementary-font-color: white;
-    --outline: 3px solid black;
+:root,
+.theme-default {
+  --primary: #f0f0f0;
+  --secondary: black;
+  --accent: black;
+  --background-color: var(--primary);
+  --complementary-background-color: var(--secondary);
+  --font-fam: "Neue Machina", Arial, Helvetica, sans-serif;
+  --font-size: 18px;
+  --font-color: black;
+  --complementary-font-color: var(--background-color);
+  --outline-color: var(--accent);
+  --outline: 3px solid var(--outline-color);
+}
+
+.theme-pink {
+  --primary: hsl(322, 100%, 37%);
+  --secondary: hsl(322, 100%, 77%);
+  --background-color: hsl(321, 100%, 95%);
+  --accent: hsl(136, 84%, 80%);
+  --complementary-background-color: var(--secondary);
+  --font-color: black;
+  --complementary-font-color: var(--background-color);
+  --outline-color: var(--accent);
+  --outline: 3px solid var(--outline-color);
+}
+
+.theme-dark-pink {
+  --primary: hsl(322, 100%, 37%);
+  --secondary: hsl(322, 100%, 80%);
+  --background-color: hsl(0, 0%, 2%);
+  --accent: hsl(136, 84%, 70%);
+  --complementary-background-color: var(--secondary);
+  --font-color: hsl(0, 0%, 98%);
+  --complementary-font-color: var(--background-color);
+  --outline-color: var(--accent);
+  --outline: 3px solid var(--outline-color);
 }

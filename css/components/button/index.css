@@ -1,20 +1,30 @@
 /* common button configuration */
 
 .button {
-    width: 145px;
-    height: 52px;
-    font-family: var(--font-fam);
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    font-size: var(--font-size);
-    margin: 10px;
-    transition: transform 300ms ease-out;
+  width: 145px;
+  height: 52px;
+  font-family: var(--font-fam);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size);
+  margin: 10px;
+  transition: transform 300ms ease-out;
 }
 
 .button:focus-visible {
-    transform: scale(1.1);
-    background-color: var(--background-color, white);
-    color: var(--font-color);
-    outline: var(--outline);
+  transform: scale(1.1);
+  background-color: var(--background-color, white);
+  color: var(--font-color);
+  outline: var(--outline);
+}
+
+.light-btn {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.dark-btn {
+  background-color: var(--complementary-background-color);
+  color: var(--complementary-font-color);
 }

@@ -20,7 +20,7 @@
 
 .nav__menu-toggle:focus {
   transform: scale(1.1);
-  background-color: var(--background-color, white);
+  background-color: var(--accent, --background-color);
   color: var(--font-color);
   outline: var(--outline);
 }
@@ -33,16 +33,6 @@
 
 .nav__button-container {
   display: none;
-}
-
-.nav__button__log-in {
-  background-color: var(--background-color, white);
-  color: var(--font-color);
-}
-
-.nav__button__sign-up {
-  background-color: var(--dark-background-color);
-  color: var(--complementary-font-color);
 }
 
 @media screen and (min-width: 360px) {
