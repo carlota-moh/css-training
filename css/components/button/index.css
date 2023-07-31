@@ -1,8 +1,12 @@
-/* common button configuration */
+/* common button configuration */  
+:root {
+  --button-width: 145px;
+  --button-height: 52px;
+}             
 
 .button {
-  width: 145px;
-  height: 52px;
+  width: var(--button-width);
+  height: var(--button-height);
   font-family: var(--font-fam);
   border: none;
   cursor: pointer;
