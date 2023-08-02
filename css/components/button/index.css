@@ -7,20 +7,26 @@
 .button {
   width: var(--button-width);
   height: var(--button-height);
-  font-family: var(--font-fam);
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  font-size: var(--font-size);
+
   margin: 10px;
+
+  font-family: var(--font-fam);
+  font-size: var(--font-size);
+  text-align: center;
+
+  border: none;
+
+  cursor: pointer;
+  
   transition: transform 300ms ease-out;
 }
 
 .button:focus-visible {
-  transform: scale(1.1);
   background-color: var(--background-color, white);
   color: var(--font-color);
   outline: var(--outline);
+
+  transform: scale(1.1);
 }
 
 .light-btn {

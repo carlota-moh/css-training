@@ -2,27 +2,32 @@
 .nav__auth {
   display: flex;
   flex-direction: row;
+
   justify-content: left;
 }
 
 .nav__menu-toggle {
   display: block;
   position: absolute;
-  background: transparent url("assets/hamburguer.png") no-repeat center;
-  border: none;
+  right: 2em;
   z-index: 9999;
+
   width: 3rem;
   aspect-ratio: 1;
-  right: 2em;
   margin: 10px;
+
+  background: transparent url("assets/hamburguer.png") no-repeat center;
+  border: none;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nav__menu-toggle:focus {
-  transform: scale(1.1);
   background-color: var(--accent, --background-color);
   color: var(--font-color);
   outline: var(--outline);
+
+  transform: scale(1.1);
 }
 
 .nav__menu-toggle[aria-expanded="true"] {
@@ -36,38 +41,48 @@
 }
 
 .nav__button-theme > label {
+  display: block;
+  position: relative;
+  bottom: 7px;
+
   width: var(--button-width);
   height: var(--button-height);
-  bottom: 7px;
-  cursor: pointer;
   margin: 10px;
+
+  cursor: pointer;
+
   text-align: center;
-  position: relative;
-  display: block;
+
   background-color: #ebebeb;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+
   transition: 0.3s;
 }
 
 .nav__button-theme > label:after {
-  content: "";
-  width: calc(var(--button-width) / 3);
-  height: calc(var(--button-height) - 10px);
   position: absolute;
   top: 5px;
   left: 5px;
+
+  width: calc(var(--button-width) / 3);
+  height: calc(var(--button-height) - 10px);
+
+  content: "";
+  
   background: linear-gradient(180deg, #ffcc89, #d8860b);
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
   transition: 0.3s;
 }
 
 .nav__button-theme > input {
+  visibility: hidden;
+
   width: 0;
   height: 0;
-  visibility: hidden;
 }
 
 .nav__button-theme > input:checked + label {
@@ -76,8 +91,10 @@
 
 .nav__button-theme > input:checked + label:after {
   left: calc(var(--button-width) - 5px);
-  transform: translateX(-100%);
+
   background: linear-gradient(180deg, #777, #3a3a3a);
+
+  transform: translateX(-100%);
 }
 
 .nav__button-theme > label:active::after {

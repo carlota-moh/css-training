@@ -5,9 +5,10 @@ body {
 }
 
 a {
+  padding: 3px;
+
   color: var(--font-color);
   text-decoration: none;
-  padding: 3px;
 }
 
 a:focus {
@@ -25,10 +26,12 @@ a:focus {
 }
 
 .nav__link-item {
-  list-style: none;
+  margin: 0 20px;
+
   font-family: var(--font-fam);
   font-size: var(--font-size);
-  margin: 0 20px;
+
+  list-style: none;
 }
 
 @media screen and (max-width: 360px) {
@@ -40,8 +43,10 @@ a:focus {
     inset: 0 0 0 30%;
     flex-direction: column;
     padding: min(30vh, 10rem) 1em;
+
     background: hsl(0, 0%, 0%, 0.1);
     backdrop-filter: blur(1rem);
+    
     transition: transform 400ms ease-out;
     transform: translateX(100%);
   }
